@@ -3,7 +3,7 @@
 ```bash
 mkdir node-server-demo
 ```
-进入 `node-server-demo` [文件夹](https://so.csdn.net/so/search?q=%E6%96%87%E4%BB%B6%E5%A4%B9&spm=1001.2101.3001.7020)内，初始化 `package.json`文件
+进入 `node-server-demo` 文件夹内，初始化 `package.json`文件
 ```bash
 cd node-server-demo
 ```
