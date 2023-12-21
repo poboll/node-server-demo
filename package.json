@@ -1,0 +1,15 @@
+{
+  "name": "server-demo",
+  "version": "1.0.0",
+  "description": "Node跨域 Node.js部署 Vercel 使用 node.js 简单搭建Web服务/使用node简单搭建后端服务/使用node搭建服务/部署Vercel 部署vercel/express模块化开发",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
