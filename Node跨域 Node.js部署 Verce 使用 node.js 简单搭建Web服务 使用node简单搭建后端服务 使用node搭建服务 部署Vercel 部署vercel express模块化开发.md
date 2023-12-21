@@ -11,7 +11,7 @@ cd node-server-demo
 ```bash
 npm init -y
 ```
-![](./images/init.png)
+![](https://fastly.jsdelivr.net/gh/poboll/node-server-demo/images/init.png)
 # 2、安装 Express.js Web 服务框架
 ```bash
 npm install express
@@ -47,13 +47,13 @@ app.listen(port, () => {
 ```bash
 node app.js
 ```
-![](./images/start.png)
+![](https://fastly.jsdelivr.net/gh/poboll/node-server-demo/images/start.png)
 # 5、请求测试
 请求测试，使用 postman或者 apifox
 `GET` 请求
-![](./images/get.png)
+![](https://fastly.jsdelivr.net/gh/poboll/node-server-demo/images/get.png)
 `POST` 请求
-![](./images/post.png)
+![](https://fastly.jsdelivr.net/gh/poboll/node-server-demo/images/post.png)
 到这里 node 简单搭建服务端就完成。
 # 6、接口按路由分模块
 **全部接口写在 app.js中不好维护，臃肿**，实际开发肯定是要分模块的
@@ -86,7 +86,7 @@ admin.get('/login', (req, res) => {
 module.exports = admin
 ```
 此时文件目录对照：
-![](./images/router.png)
+![](https://fastly.jsdelivr.net/gh/poboll/node-server-demo/images/router.png)
 在 `app.js` 主入口中注册路由
 ```javascript
 const express = require('express');
@@ -120,8 +120,8 @@ app.listen(port, () => {
 });
 ```
 启动测试 访问 `/app`，`/admin` 可以看到两个都生效了
-![](./images/app.png)
-![](./images/admin.png)
+![](https://fastly.jsdelivr.net/gh/poboll/node-server-demo/images/app.png)
+![](https://fastly.jsdelivr.net/gh/poboll/node-server-demo/images/admin.png)
 # 7、跨域设置
 安装跨域插件 [官方文档](https://github.com/expressjs/cors)
 ```bash
@@ -136,7 +136,7 @@ app.use(cors())
 # 8、静态页面处理
 创建 `public` 或者 `src`目录文件夹，随便取什么名字都可以，我这边html文件放在了 `public/pages/` 下面
 此时文件结构：
-![](./images/pages.png)
+![](https://fastly.jsdelivr.net/gh/poboll/node-server-demo/images/pages.png)
 编写访问 `index.html` 的路由，我这边图简单直接 `app.js` 中的 `/` 根路由访问 `index.html`文件,也比较合理
 ```javascript
 app.get('/', (req, res) => {
@@ -182,7 +182,7 @@ app.listen(port, () => {
 });
 ```
 访问 `/` 测试 已经生效
-![](./images/test.png))
+![](https://fastly.jsdelivr.net/gh/poboll/node-server-demo/images/test.png))
 # 9、部署 vercel
 首先得准备一个 Vercel账户，这个就不讲解了
 电脑全局安装 Vercel脚手架
@@ -212,7 +212,7 @@ vercel login
 }
 ```
 此时目录结构：
-![](./images/vercel.png)
+![](https://fastly.jsdelivr.net/gh/poboll/node-server-demo/images/vercel.png)
 将当前项目 预览部署到 Vercel中, 在 node.js项目根目录执行以下命令, 部署完成之后会给一个预览地址和部署地址，
 ```bash
 vercel
